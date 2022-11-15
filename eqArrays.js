@@ -12,11 +12,9 @@ const eqArrays = function (arry1, arry2) {
   }
   for (let items in arry1) {
     if (arry1[items] !== arry2[items]) {
-      console.log("false");
       return false;
     }
   }
-  console.log("true");
   return true;
 };
 
