@@ -23,10 +23,10 @@ const assertArraysEqual = function (arry1, arry2) {
 
 const without = function (source, itemsToRemove) {
   let sourceCopy = [...source];
-  for (let sourceItems of sourceCopy) {
-    for (let removeItems of itemsToRemove) {
-      if (sourceItems === removeItems) {
-        let removeIndex = sourceCopy.indexOf(sourceItems);
+  for (let sourceItem of sourceCopy) {
+    for (let removeItem of itemsToRemove) {
+      if (sourceItem === removeItem) {
+        let removeIndex = sourceCopy.indexOf(sourceItem);
         sourceCopy.splice(removeIndex,1);
       }
     }
