@@ -13,11 +13,15 @@ const eqArrays = function (arry1, arry2) {
 
 //ACTUAL FUNCTION
 //this function compares two arrays and console.logs whether they match or not
-const assertArraysEqual = function (arry1, arry2) {
-  let result = eqArrays(arry1,arry2);
-  if (result===false) {
-    console.log("Arrays are not equal.");
-  } else if (result === true); {
-    console.log("Arrays are equal.");
+const assertArraysEqual = function (actual, expected) {
+  let result = eqArrays(actual, expected);
+  if (result === false) {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  } else if (result === true) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }
 };
+
+//TEST CASES
+assertArraysEqual([1,2,3],[1,2,3]);
+assertArraysEqual([1,2,3],[1,2,4]);
