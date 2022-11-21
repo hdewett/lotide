@@ -5,7 +5,8 @@ const assertEqual = function (actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
+//ACTUAL FUNCTION
+//returns the "tail" of an array, everything except for the first item of the provided array
 const tail = function (list) {
   return list.slice(1);
 };
