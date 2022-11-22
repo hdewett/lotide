@@ -31,7 +31,7 @@ const takeUntil = function(array, callback) {
     if (callback(item) === false) {
       results.push(item);
     } else {
-      return results
+      return results;
     }
   }
 };
