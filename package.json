@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@hdewett/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a mini clone of a lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/hdewett/lotide.git"
   },
-  "author": "",
+  "author": "Hilora Dewett h.dewett@outlook.com (http://github.com/hdewett)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hdewett/lotide/issues"
