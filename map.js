@@ -31,17 +31,19 @@ const map = function(array, callback) {
   return results;
 };
 
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-console.log(results1);
-assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
+module.exports = map;
 
-const dogs = ["Husky", "Bichon Frise", "Poodle", "Pug"];
-const results2 = map(dogs, dog => dog[1]);
-assertArraysEqual(results2, ["u", "i", "o", "u"]);
+// const words = ["ground", "control", "to", "major", "tom"];
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
+// assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
 
-const results3 = map(dogs, dog => dog.length);
-assertArraysEqual(results3, [5, 12, 6, 3]);
+// const dogs = ["Husky", "Bichon Frise", "Poodle", "Pug"];
+// const results2 = map(dogs, dog => dog[1]);
+// assertArraysEqual(results2, ["u", "i", "o", "u"]);
 
-const results4 = map(dogs, dog => dog.toUpperCase());
-assertArraysEqual(results4, ["HUSKY", "BICHON FRISE", "POODLE", "PUG"]);
+// const results3 = map(dogs, dog => dog.length);
+// assertArraysEqual(results3, [5, 12, 6, 3]);
+
+// const results4 = map(dogs, dog => dog.toUpperCase());
+// assertArraysEqual(results4, ["HUSKY", "BICHON FRISE", "POODLE", "PUG"]);
