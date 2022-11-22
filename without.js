@@ -1,4 +1,4 @@
-const eqArrays = function (arry1, arry2) {
+const eqArrays = function(arry1, arry2) {
   if (arry1.length !== arry2.length) {
     return false;
   }
@@ -10,7 +10,7 @@ const eqArrays = function (arry1, arry2) {
   return true;
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   let result = eqArrays(actual, expected);
   if (result === false) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
@@ -20,7 +20,7 @@ const assertArraysEqual = function (actual, expected) {
 };
 
 //function will remove a subset of a given array and remove unwanted elements
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   let sourceCopy = [...source];
   for (let sourceItem of sourceCopy) {
     for (let removeItem of itemsToRemove) {

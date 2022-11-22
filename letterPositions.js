@@ -1,5 +1,5 @@
 //Testing functions
-const eqArrays = function (arry1, arry2) {
+const eqArrays = function(arry1, arry2) {
   if (arry1.length !== arry2.length) {
     return false;
   }
@@ -11,7 +11,7 @@ const eqArrays = function (arry1, arry2) {
   return true;
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   let result = eqArrays(actual, expected);
   if (result === false) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);

@@ -1,5 +1,5 @@
 //function compares two values and console.logs if they are the same or not
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,7 +8,7 @@ const assertEqual = function (actual, expected) {
 };
 
 //function counts number of times a letter shows up in a string
-const countLetters = function (str) {
+const countLetters = function(str) {
   let lowerStr = str.toLowerCase();
   const letterCount = {};
   for (let letter of lowerStr) {

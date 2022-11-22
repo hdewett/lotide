@@ -1,5 +1,5 @@
 //function compares two values and console.logs if they are the same or not
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,7 +8,7 @@ const assertEqual = function (actual, expected) {
 };
 
 //function eqArrays which takes in two arrays and returns true or false, based on a perfect match
-const eqArrays = function (arry1, arry2) {
+const eqArrays = function(arry1, arry2) {
   if (arry1.length !== arry2.length) {
     return false;
   }

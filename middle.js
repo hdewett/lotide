@@ -1,6 +1,6 @@
 // ACTUAL FUNCTION
 //takes in an array and returns the middle-most elements of the given array
-const middle = function (array) {
+const middle = function(array) {
   if (array.length === 1 || array.length === 2) {
     return [];
   }
